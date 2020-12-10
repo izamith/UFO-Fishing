@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>UFO Fishing!</title>
+		<meta charset="utf-8" />
+		<link href="style.css" rel="stylesheet" title="Default Style">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="actions.js"> </script>
+			<audio id="music">
+  			<source src="sounds/background-music.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+			</audio>
+			<audio id="life">
+  			<source src="sounds/life.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+			</audio>
+			<audio id="lose">
+  			<source src="sounds/lose.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+			</audio>
+			<audio id="points">
+				<source src="sounds/points.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+			</audio>
+			<audio id="victory">
+				<source src="sounds/victory.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+			</audio>
+	</head>
+	<body>
+    <!-- Assets (personagens e backgrounds) display none-->
+    <div class="assets" style="display:none;">
+      <img id="asset_alien1" src="assets/Alien_1_Enlarged.png" alt="alien 1"/>
+      <img id="asset_alien2" src="assets/Alien_2_Enlarged.png" alt="alien 2"/>
+      <img id="asset_alien3" src="assets/Alien_3_Enlarged.png" alt="alien 3"/>
+      <img id="asset_human" src="assets/Human_Enlarged.png" alt="human"/>
+      <img id="asset_ufo" src="assets/UFO_2_Enlarged.png" alt="UFO 2"/>
+      <img id="asset_bg1" src="assets/BG_1.jpg" alt="BG 1"/>
+      <img id="asset_bg2" src="assets/BG_2.jpeg" alt="BG 2"/>
+      <img id="asset_bg3" src="assets/BG_3.jpg" alt="BG 3"/>
+    </div>
+    <!--Título do jogo-->
+    <div class="titulo">
+      <img src="assets/logo.png"/>
+    </div>
+    <!--Instruções-->
+    <span id="topo">
+     <p> Como Jogar </p>
+		 <p class="texto"> Bem-vindo terráqueo, nós precisamos de sua ajuda para salvar nossa espécie!! Nossa nave foi atacada e nossos irmãos e... ahm.. espólios foram jogados no espaço!
+			 Queremos que você salve nossos cadetes e os nossas, bem, cobaias.
+			 Mas atenção! Não queremos os de sua espécie, não os pegue e deixe que retornem para a terra com a ajuda da gravidade..
+			 Cada astronauta que pegar custará nossa paciencia em 1 vida, ao totalizar 3, o aniquilaremos sem piedade.
+			 As cobaias valem mais para nós, para... estudos, então por cada uma lhe pagaremos 30 pontos intergaláticos e por nossos irmãos 5 cada.
+			 Boa sorte terráqueo, seu planeta está em suas mãos. Literalemente.</p>
+		 <button type="button" onclick="Iniciar()"> Jogar </button>
+    </span>
+
+		<div class="container">
+    <!--canvas para exibir o jogo, display none pra só aparecer quando aperta o botão-->
+    <div class="cvs" >
+		<canvas id="canvas" height="600px" width= "1000px" style="display:none"> </canvas>
+	</div >
+<div id="status">
+		<div id="vidas" style="display:none;">
+			<p class="texto status"> Vidas </p>
+			<span id="mostraVidas">3</span>
+		</div>
+
+		<div id="pontuacao" style="display:none;">
+			<p class="texto status"> Pontuação </p>
+			<span id="mostraPontuacao"> </span>
+		</div>
+
+		<div id="fase" style="display:none;">
+			<p class="texto status"> Fase </p>
+			<span id="mostraFase"> </span>
+		</div>
+</div>
+
+
+</div>
+
+<script>
+</script>
+	</body>
+</html>
